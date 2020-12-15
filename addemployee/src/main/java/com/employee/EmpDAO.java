@@ -13,6 +13,7 @@ public class EmpDAO {
 		jdbcTemplate.update("insert into emp(id, name,dept)values(?,?,?)",
 				new Object[] { emp.getId(), emp.getName(), emp.getDept() });
 		// return findEmployeebyId(emp.getId());
+		System.out.println("hi");
 	}
 
 }
